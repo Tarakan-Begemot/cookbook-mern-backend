@@ -21,6 +21,10 @@ connectToDb((err) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('All good');
+});
+
 app.get('/recipes', (req, res) => {
   let recipes = [];
 
